@@ -16,6 +16,8 @@
 		07C889C11EDBCF4800579A28 /* Validation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C889C01EDBCF4800579A28 /* Validation.storyboard */; };
 		07C889C31EDBCF7800579A28 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C889C21EDBCF7800579A28 /* SimpleValidationViewController.swift */; };
 		07C889C51EDBD2C300579A28 /* SimpleValidationWithoutRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C889C41EDBD2C300579A28 /* SimpleValidationWithoutRxViewController.swift */; };
+		07C889C91EDC257500579A28 /* Staff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C889C81EDC257500579A28 /* Staff.storyboard */; };
+		07C889CB1EDC25FD00579A28 /* StaffSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C889CA1EDC25FD00579A28 /* StaffSearchViewController.swift */; };
 		56B107CAE8AE0C4FD5853CC3 /* Pods_TraningRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D37856425681434EA5791 /* Pods_TraningRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		07C889C01EDBCF4800579A28 /* Validation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Validation.storyboard; sourceTree = "<group>"; };
 		07C889C21EDBCF7800579A28 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		07C889C41EDBD2C300579A28 /* SimpleValidationWithoutRxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationWithoutRxViewController.swift; sourceTree = "<group>"; };
+		07C889C81EDC257500579A28 /* Staff.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Staff.storyboard; sourceTree = "<group>"; };
+		07C889CA1EDC25FD00579A28 /* StaffSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffSearchViewController.swift; sourceTree = "<group>"; };
 		591D37856425681434EA5791 /* Pods_TraningRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraningRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		762246B29F021B6CAE6AB058 /* Pods-TraningRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraningRxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraningRxSwift/Pods-TraningRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DBB1BB05B9E10999551CDB23 /* Pods-TraningRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraningRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraningRxSwift/Pods-TraningRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,9 +73,9 @@
 		07C889A71EDBC4DD00579A28 /* TraningRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				07C889C71EDC256B00579A28 /* StaffSearch */,
 				07C889BD1EDBCF0B00579A28 /* Common */,
 				07C889BB1EDBCDD100579A28 /* SimpleValidation */,
-				07C889BC1EDBCDD100579A28 /* WikipediaImageSearch */,
 				07C889A81EDBC4DD00579A28 /* AppDelegate.swift */,
 				07C889AA1EDBC4DD00579A28 /* ViewController.swift */,
 				07C889AC1EDBC4DD00579A28 /* Main.storyboard */,
@@ -92,19 +96,21 @@
 			path = SimpleValidation;
 			sourceTree = "<group>";
 		};
-		07C889BC1EDBCDD100579A28 /* WikipediaImageSearch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WikipediaImageSearch;
-			sourceTree = "<group>";
-		};
 		07C889BD1EDBCF0B00579A28 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				07C889BE1EDBCF3300579A28 /* Define.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		07C889C71EDC256B00579A28 /* StaffSearch */ = {
+			isa = PBXGroup;
+			children = (
+				07C889C81EDC257500579A28 /* Staff.storyboard */,
+				07C889CA1EDC25FD00579A28 /* StaffSearchViewController.swift */,
+			);
+			path = StaffSearch;
 			sourceTree = "<group>";
 		};
 		10DB86AE2281A7F51E0E62A8 /* Pods */ = {
@@ -190,6 +196,7 @@
 				07C889B01EDBC4DD00579A28 /* Assets.xcassets in Resources */,
 				07C889AE1EDBC4DD00579A28 /* Main.storyboard in Resources */,
 				07C889C11EDBCF4800579A28 /* Validation.storyboard in Resources */,
+				07C889C91EDC257500579A28 /* Staff.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C889AB1EDBC4DD00579A28 /* ViewController.swift in Sources */,
+				07C889CB1EDC25FD00579A28 /* StaffSearchViewController.swift in Sources */,
 				07C889BF1EDBCF3300579A28 /* Define.swift in Sources */,
 				07C889C51EDBD2C300579A28 /* SimpleValidationWithoutRxViewController.swift in Sources */,
 				07C889A91EDBC4DD00579A28 /* AppDelegate.swift in Sources */,

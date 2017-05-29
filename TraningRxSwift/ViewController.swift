@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    let sections = ["Simple Validation", "Wikipedia Image Search"]
+    let sections = ["Simple Validation", "City Search"]
     
     
     override func viewDidLoad() {
@@ -44,7 +44,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if section == 0 {
+            return 2
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,11 +61,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.textLabel?.text = "Using RxSwift"
             }
         } else {
-            if indexPath.row == 0 {
-                cell.textLabel?.text = "Without Rx"
-            } else {
-                cell.textLabel?.text = "Using RxSwift"
-            }
+            cell.textLabel?.text = "Using RxSwift"
         }
         
         return cell
@@ -78,9 +78,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 let simpleValidationWithoutRx = Storyboard.Validation.instance.instantiateViewController(withIdentifier: "SimpleValidationWithoutRxViewControllerID")
                 navigationController?.pushViewController(simpleValidationWithoutRx, animated: true)
             }
+        } else {
+            let staffView = Storyboard.Staff.instance.instantiateViewController(withIdentifier: "StaffSearchViewControllerID")
+            navigationController?.pushViewController(staffView, animated: true)
         }
-        
-        
     }
 }
 

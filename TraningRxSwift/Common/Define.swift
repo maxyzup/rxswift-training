@@ -12,6 +12,7 @@ import UIKit
 enum Storyboard: String {
     
     case Validation     = "Validation"
+    case Staff          = "Staff"
     
     var instance: UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: nil)
